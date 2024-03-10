@@ -9,7 +9,6 @@
           <h5 class="card-title"><%= character.name %></h5>
           <p class="card-text"><%= character.description %></p>
           <%= link_to 'Saiba-mais', story_character_path(character), class: 'btn btn-primary' %>
-          <%= button_to 'Delete Card', delete_card_character_path(character), method: :delete, data: { confirm: 'Are you sure?' } %>
         </div>
       </div>
     <% end %>
