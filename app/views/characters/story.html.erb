@@ -1,0 +1,13 @@
+<html>
+<head>
+  <title><%= @character.name %>'s Story</title>
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+</head>
+<body>
+<% content_for :body_class, "body-story" %>
+  <h1><%= @character.name %></h1>
+  <div class="story-content">
+    <%= @character.story %>
+  </div>
+</body>
+</html>

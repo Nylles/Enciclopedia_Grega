@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Pacifico&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+h1{
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+}
+
+
+.card-columns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start; 
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: calc(25% - 10px); 
+  margin-right: 6px;
+  margin-bottom: 20px;
+  border: 1px solid rgb(250, 219, 47);
+  box-shadow: 0 2px 5px rgb(252, 227, 2);
+  border-radius: 5px;
+  overflow: hidden;
+  transition: transform 0.3s;
+  background: linear-gradient(135deg, #810270, #ea09ff);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-img-top {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 15px;
+}
+
+.card-title {
+  margin-bottom: 10px;
+}
+
+.card-text {
+  margin-bottom: 15px;
+}
+.card-body h5.card-title {
+  font-family: "Archivo Black", sans-serif;
+  color: #eff314; 
+  font-size: 1.3rem; 
+  
+}
+
+.card-body p.card-text {
+  font-family: "Roboto", sans-serif;
+  color: #ffffff; 
+  font-size: 1.2rem; 
+  line-height: 1.4; 
+  
+}
+
+.btn-primary {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: rgb(0, 0, 0);
+  background-color: #e5f323;
+  border: 2px solid #dadd0b;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #ffffff;
+  border-color: #eee125;
+}
+
+body {
+  background-color: rgb(27, 27, 27);
+  color: white; 
+}

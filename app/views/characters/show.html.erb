@@ -1,0 +1,17 @@
+<div class="character-card">
+  <p>
+    <strong>Name:</strong>
+    <%= @character.name %>
+  </p>
+  <p>
+    <strong>Photo URL:</strong>
+    <%= image_tag @character.photo_url %>
+  </p>
+  <p>
+    <strong>Description:</strong>
+    <%= @character.description %>
+  </p>
+  <p>
+    <%= link_to 'Learn more', character_path(@character) %>
+  </p>
+</div>

@@ -1,0 +1,21 @@
+<%= form_with(model: character, local: true) do |form| %>
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name, class: 'form-control' %>
+  </div>
+  <div class="field">
+    <%= form.label :photo_url %>
+    <%= form.text_field :photo_url, class: 'form-control' %>
+  </div>
+  <div class="field">
+    <%= form.label :description %>
+    <%= form.text_area :description, class: 'form-control' %>
+  </div>
+  <div class="field">
+    <%= form.label :story %>
+    <%= form.text_area :story, class: 'form-control' %>
+  </div>
+  <div class="actions">
+    <%= form.submit 'Create Character', class: 'btn btn-primary' %>
+  </div>
+<% end %>

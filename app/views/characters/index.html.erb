@@ -1,0 +1,17 @@
+<h1> Personagens da mitologia grega <h1/>
+ 
+<div class="container">
+  <div class="card-columns">
+    <% @characters.each do |character| %>
+      <div class="card">
+        <img src="<%= character.photo_url %>" class="card-img-top" alt="<%= character.name %>">
+        <div class="card-body">
+          <h5 class="card-title"><%= character.name %></h5>
+          <p class="card-text"><%= character.description %></p>
+          <%= link_to 'Saiba-mais', story_character_path(character), class: 'btn btn-primary' %>
+          <%= button_to 'Delete Card', delete_card_character_path(character), method: :delete, data: { confirm: 'Are you sure?' } %>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
